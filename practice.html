@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jared Semonin | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-zinc-900 text-gray-200">
+<script>AOS.init();</script>
+
+<!-- Nav -->
+<div class="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
+  <nav class="bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-800/90 backdrop-blur-md rounded-full px-10 py-4 shadow-lg flex space-x-12 border border-zinc-700">
+    <a href="#home" class="hover:text-blue-400 transition flex items-center space-x-2 relative group">
+      <i class="ph ph-house"></i><span>Home</span>
+      <span class="absolute -inset-2 rounded-full border-2 border-blue-400 opacity-0 group-[.active]:opacity-100 transition-all"></span>
+    </a>
+    <a href="#skills" class="hover:text-blue-400 transition flex items-center space-x-2 relative group">
+      <i class="ph ph-code"></i><span>Skills</span>
+      <span class="absolute -inset-2 rounded-full border-2 border-blue-400 opacity-0 group-[.active]:opacity-100 transition-all"></span>
+    </a>
+    <a href="#education" class="hover:text-blue-400 transition flex items-center space-x-2 relative group">
+      <i class="ph ph-graduation-cap"></i><span>Education</span>
+      <span class="absolute -inset-2 rounded-full border-2 border-blue-400 opacity-0 group-[.active]:opacity-100 transition-all"></span>
+    </a>
+    <a href="#projects" class="hover:text-blue-400 transition flex items-center space-x-2 relative group">
+      <i class="ph ph-folder"></i><span>Projects</span>
+      <span class="absolute -inset-2 rounded-full border-2 border-blue-400 opacity-0 group-[.active]:opacity-100 transition-all"></span>
+    </a>
+    <a href="#contact" class="hover:text-blue-400 transition flex items-center space-x-2 relative group">
+      <i class="ph ph-envelope"></i><span>Contact</span>
+      <span class="absolute -inset-2 rounded-full border-2 border-blue-400 opacity-0 group-[.active]:opacity-100 transition-all"></span>
+    </a>
+  </nav>
+</div>
+<!-- Hero Section -->
+<header class="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-zinc-900 to-zinc-800 text-center px-4">
+  <!-- Profile Image -->
+  <img
+          src="images/profile.jpg"
+          alt="Jared Semonin"
+          class="w-44 h-44 md:w-56 md:h-56 rounded-full border-4 border-zinc-700 shadow-xl object-cover mb-6"
+          data-aos="fade-down"
+  />
+
+  <!-- Text Content -->
+  <div data-aos="fade-up">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-white drop-shadow-lg">Jared Semonin</h1>
+    <p class="text-xl md:text-2xl mt-4 text-blue-400">Software Developer</p>
+    <div class="mt-8 space-x-4">
+      <a href="https://github.com/JAtomsk" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-lg transition">Learn More</a>
+      <a href="jSemoninResume.pdf" class="bg-zinc-700 hover:bg-zinc-600 text-white font-bold py-3 px-6 rounded-lg transition">Get Resume</a>
+    </div>
+  </div>
+</header>
+
+
+<main class="px-6 py-16 max-w-5xl mx-auto space-y-20">
+
+
+  <div class="mt-12 max-w-4xl px-6 md:px-12 text-left text-sm md:text-base text-gray-300" data-aos="fade-up">
+    <h2 class="text-2xl font-semibold text-blue-400 mb-4">About Me</h2>
+    <p class="mb-4">I'm a software developer with a genuine interest in both frontend and backend development. I’m drawn to the process of making things work well and look right — whether that means improving how users interact with a layout or refining the way data flows behind the scenes.</p>
+    <p class="mb-4">Rather than choosing one path over the other, I’ve focused on learning from real projects that challenge me to think critically across the stack. I approach development with patience, persistence, and a desire to keep improving — not for the sake of perfection, but because every step forward teaches me something valuable.</p>
+    <p>For me, building software is less about sticking to what works and more about staying curious, asking how it could be better, and putting that into practice, one project at a time.</p>
+  </div>
+
+
+  <section id="skills" class="py-20 bg-gradient-to-br from-zinc-900 to-zinc-950 text-gray-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Frontend Development -->
+        <div class="bg-zinc-800/70 border border-gray-600/30 rounded-xl shadow-xl p-6 backdrop-blur-sm">
+          <div class="flex items-center space-x-3 mb-4">
+            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" stroke-width="1.5"
+                 viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 5h18M3 12h18M3 19h18"/>
+            </svg>
+            <h3 class="text-xl font-semibold text-white">Frontend Development</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">HTML5</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">CSS3</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">JavaScript</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Tailwind CSS</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">React</span>
+          </div>
+        </div>
+
+        <!-- Backend Development -->
+        <div class="bg-zinc-800/70 border border-gray-600/30 rounded-xl shadow-xl p-6 backdrop-blur-sm">
+          <div class="flex items-center space-x-3 mb-4">
+            <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" stroke-width="1.5"
+                 viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 4v16m8-8H4"/>
+            </svg>
+            <h3 class="text-xl font-semibold text-white">Backend Development</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Java</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Spring Boot</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">REST APIs</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">MySQL</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Node.js</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Express.js</span>
+          </div>
+        </div>
+
+        <!-- Mobile Development -->
+        <div class="bg-zinc-800/70 border border-gray-600/30 rounded-xl shadow-xl p-6 backdrop-blur-sm">
+          <div class="flex items-center space-x-3 mb-4">
+            <svg class="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" stroke-width="1.5"
+                 viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M7 4h10v16H7z"/>
+            </svg>
+            <h3 class="text-xl font-semibold text-white">Mobile Development</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Android Studio</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Java</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Retrofit</span>
+          </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="bg-zinc-800/70 border border-gray-600/30 rounded-xl shadow-xl p-6 backdrop-blur-sm">
+          <div class="flex items-center space-x-3 mb-4">
+            <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" stroke-width="1.5"
+                 viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 6v6h4"/>
+            </svg>
+            <h3 class="text-xl font-semibold text-white">Tools & Technologies</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Git</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">GitHub</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">VS Code</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">IntelliJ</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Postman</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">DataGrip</span>
+          </div>
+        </div>
+
+        <!-- Cloud & Deployment -->
+        <div class="bg-zinc-800/70 border border-gray-600/30 rounded-xl shadow-xl p-6 backdrop-blur-sm">
+          <div class="flex items-center space-x-3 mb-4">
+            <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" stroke-width="1.5"
+                 viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 15a4 4 0 014-4h10a4 4 0 014 4"/>
+            </svg>
+            <h3 class="text-xl font-semibold text-white">Cloud & Deployment</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">AWS RDS</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">MySQL Workbench</span>
+          </div>
+        </div>
+
+        <!-- UI/UX & Design -->
+        <div class="bg-zinc-800/70 border border-gray-600/30 rounded-xl shadow-xl p-6 backdrop-blur-sm">
+          <div class="flex items-center space-x-3 mb-4">
+            <svg class="w-6 h-6 text-teal-400" fill="none" stroke="currentColor" stroke-width="1.5"
+                 viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4 6h16M4 12h8m-8 6h16"/>
+            </svg>
+            <h3 class="text-xl font-semibold text-white">UI/UX & Design</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Figma</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Wireframing</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Responsive Layout</span>
+            <span class="bg-zinc-700 px-3 py-1 rounded-full text-sm text-white">Custom Styling</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="bg-gradient-to-br from-zinc-800 to-zinc-900 p-10 rounded-xl shadow-xl" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-8 text-blue-400 text-center">Education</h2>
+    <div class="bg-zinc-800/70 p-6 rounded-lg shadow-inner border border-gray-400/30 backdrop-blur-md">
+      <div class="flex items-center mb-4">
+        <i class="ph ph-student text-xl text-blue-300 mr-3"></i>
+        <h3 class="text-xl font-semibold text-white">Bachelor of Science in Computer Science (BSc CS)</h3>
+      </div>
+      <div class="flex items-center mb-2">
+        <i class="ph ph-graduation-cap text-blue-300 mr-3"></i>
+        <p class="text-gray-300">Southern New Hampshire University</p>
+      </div>
+      <div class="flex items-center mb-4">
+        <i class="ph ph-calendar-blank text-blue-300 mr-3"></i>
+        <p class="text-gray-400">2018 – 2024</p>
+      </div>
+      <div class="inline-flex items-center px-4 py-1 rounded-full text-sm bg-green-600/20 text-green-300 shadow-inner">
+        <i class="ph ph-medal text-green-300 mr-2"></i>
+        GPA: 3.7
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gradient-to-br from-zinc-900 to-zinc-950 text-gray-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Projects</h2>
+      <div class="space-y-12">
+
+        <!-- Project 1 -->
+        <div class="flex flex-col lg:flex-row items-start bg-zinc-800/70 border border-gray-500/30 rounded-xl shadow-xl overflow-hidden">
+          <img src="images/login.png" alt="Screenshot" class="lg:w-1/2 w-full object-cover max-h-80">
+          <div class="p-6 lg:w-1/2 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-bold text-white mb-2">JJWarehouse – Inventory Management App</h3>
+              <p class="text-lg text-gray-300 leading-relaxed mb-4">A full-stack Android app built to track and manage inventory with features like login, real-time search, and CRUD operations connected to a secure backend API.</p>
+            </div>
+            <div class="space-x-4">
+              <a href="https://jatomsk.github.io/Warehouse/" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded">Live</a>
+              <a href="https://github.com/JAtomsk/Warehouse" class="inline-block bg-zinc-700 hover:bg-zinc-600 text-white font-semibold py-2 px-4 rounded">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="flex flex-col lg:flex-row bg-zinc-800/70 border border-gray-500/30 rounded-xl shadow-xl overflow-hidden">
+          <img src="images/roofestimate.png" alt="Roofing Estimate Screenshot" class="lg:w-1/2 w-full object-cover">
+          <div class="p-8 lg:w-1/2 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-bold text-white mb-2">RoofingEstimateApp – Roofing Estimating App</h3>
+              <p class="text-lg text-gray-300 leading-relaxed mb-4">A Java Spring Boot backend system that lets contractors store client data and generate basic roofing estimates based on dimensions and material costs. Aiming to support future role-based access and secure data management.</p>
+            </div>
+            <div class="space-x-4">
+              <a class="inline-block bg-gray-600 text-white font-semibold py-2 px-4 rounded cursor-not-allowed" title="Project page coming soon!">🚧 Coming Soon</a>
+              <a href="https://github.com/JAtomsk/RoofingEstimateApp" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded">Code</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-zinc-800 p-10 rounded-xl shadow-xl" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-8 text-blue-400 text-center">Contact</h2>
+    <div class="text-center text-lg space-y-2">
+      <p>Email: your.email@example.com</p>
+      <p>GitHub: <a href="https://github.com/JAtomsk" class="text-blue-400 hover:underline">@JAtomsk</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jsemonin117" class="text-blue-400 hover:underline">@jaredsemonin</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-zinc-900 text-center py-6 text-gray-500">
+  &copy; 2025 Jared Semonin. Built with Tailwind CSS.
+</footer>
+
+</body>
+</html>
+
